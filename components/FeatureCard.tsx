@@ -18,7 +18,7 @@ export default function FeatureCard({
 }: FeatureCardProps) {
   return (
     <motion.div
-      className="group relative rounded-2xl border border-border bg-surface p-7 transition-all duration-200 ease-out hover:border-primary/20 hover:shadow-[0_8px_30px_rgba(27,59,42,0.08),0_2px_8px_rgba(27,59,42,0.04)]"
+      className="group relative rounded-2xl border border-border bg-white p-7 shadow-[0_1px_3px_rgba(27,59,42,0.04)] transition-all duration-200 ease-out hover:border-primary/20 hover:shadow-[0_8px_30px_rgba(27,59,42,0.08),0_2px_8px_rgba(27,59,42,0.04)]"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}

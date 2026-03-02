@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, Instrument_Serif, Caveat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -16,14 +16,27 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Beeldenbank — AI-beeldenbank voor architectenbureaus",
+  title: "Beeldenbank — De beeldenbank voor architectenbureaus",
   description:
-    "Organiseer, vind en deel al je projectfoto's in seconden met AI-tagging en semantic search. Gebouwd voor architectenbureaus.",
+    "Organiseer, vind en deel al je projectfoto's in seconden. Automatisch getagd en vindbaar in gewone taal. Gebouwd voor architectenbureaus.",
   openGraph: {
-    title: "Beeldenbank — AI-beeldenbank voor architectenbureaus",
+    title: "Beeldenbank — De beeldenbank voor architectenbureaus",
     description:
-      "Organiseer, vind en deel al je projectfoto's in seconden met AI-tagging en semantic search.",
+      "Organiseer, vind en deel al je projectfoto's in seconden. Automatisch getagd en vindbaar in gewone taal.",
     type: "website",
     locale: "nl_NL",
   },
@@ -35,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={`${inter.variable} ${plusJakarta.variable}`}>
+    <html lang="nl" className={`${inter.variable} ${plusJakarta.variable} ${instrumentSerif.variable} ${caveat.variable}`}>
       <body className="font-body antialiased">
         <Navbar />
         <main className="pt-[72px]">{children}</main>

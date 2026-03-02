@@ -12,12 +12,12 @@ const plans = [
   {
     name: "Starter",
     price: "€149",
-    description: "Perfect voor kleine bureaus die beginnen met AI-beeldmanagement.",
+    description: "Perfect voor kleine bureaus die grip willen op hun beeldarchief.",
     features: [
       "Tot 25.000 afbeeldingen",
       "5 teamleden",
-      "AI-tagging automatisch",
-      "Semantic search",
+      "Automatisch taggen",
+      "Zoek in gewone taal",
       "Vocabulaire beheer",
       "Bulk upload",
       "Favorieten & collecties",
@@ -32,8 +32,8 @@ const plans = [
     features: [
       "Tot 100.000 afbeeldingen",
       "15 teamleden",
-      "AI-tagging + vocabulaire beheer",
-      "Semantic search + filters",
+      "Automatisch taggen + vocabulaire beheer",
+      "Zoek in gewone taal + filters",
       "Onbeperkt projectmappen",
       "Favorieten & collecties",
       "Bulk upload & export",
@@ -50,7 +50,7 @@ const plans = [
       "Onbeperkt afbeeldingen",
       "Onbeperkt teamleden",
       "Alles in Professional",
-      "Custom AI-training",
+      "Op maat inrichten",
       "API-toegang",
       "SSO & geavanceerde beveiliging",
       "Dedicated account manager",
@@ -63,14 +63,14 @@ const plans = [
 const comparisonFeatures = [
   { feature: "Afbeeldingen", starter: "25.000", pro: "100.000", enterprise: "Onbeperkt" },
   { feature: "Teamleden", starter: "5", pro: "15", enterprise: "Onbeperkt" },
-  { feature: "AI-tagging", starter: true, pro: true, enterprise: true },
-  { feature: "Semantic search", starter: true, pro: true, enterprise: true },
+  { feature: "Automatisch taggen", starter: true, pro: true, enterprise: true },
+  { feature: "Zoek in gewone taal", starter: true, pro: true, enterprise: true },
   { feature: "Projectmappen", starter: "5", pro: "Onbeperkt", enterprise: "Onbeperkt" },
   { feature: "Vocabulaire beheer", starter: true, pro: true, enterprise: true },
   { feature: "Bulk upload", starter: true, pro: true, enterprise: true },
   { feature: "Favorieten & collecties", starter: true, pro: true, enterprise: true },
   { feature: "API-toegang", starter: false, pro: false, enterprise: true },
-  { feature: "Custom AI-training", starter: false, pro: false, enterprise: true },
+  { feature: "Op maat inrichten", starter: false, pro: false, enterprise: true },
   { feature: "SSO", starter: false, pro: false, enterprise: true },
   { feature: "SLA", starter: false, pro: false, enterprise: true },
 ];
@@ -109,7 +109,7 @@ const faqs = [
   {
     question: "Hoe lang duurt het om te starten?",
     answer:
-      "Na een kort onboardinggesprek kun je direct foto's uploaden. De AI begint meteen met analyseren. Bij 50.000 foto's is alles binnen 2-3 weken volledig doorzoekbaar.",
+      "Na een kort onboardinggesprek kun je direct foto's uploaden. Alles wordt meteen automatisch verwerkt. Bij 50.000 foto's is je hele archief snel volledig doorzoekbaar.",
   },
 ];
 
@@ -248,7 +248,7 @@ export default function PricingPage() {
       </SectionWrapper>
 
       {/* ═══ CTA ═══ */}
-      <section className="relative overflow-hidden bg-primary py-20 md:py-28">
+      <section className="grain-texture relative overflow-hidden bg-primary-dark py-20 md:py-28">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
           <div className="absolute -right-20 -bottom-20 h-72 w-72 rounded-full bg-primary-light/30 blur-3xl" />

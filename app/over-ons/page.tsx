@@ -25,9 +25,9 @@ const values = [
   },
   {
     icon: Brain,
-    title: "AI die je vaktaal spreekt",
+    title: "Spreekt jullie vaktaal",
     description:
-      "Onze AI herkent rabatdelen, cortenstaal en visgraatvloeren. Geen generieke tags, maar jullie taal.",
+      "Beeldenbank herkent rabatdelen, cortenstaal en visgraatvloeren. Geen generieke tags, maar jullie taal.",
   },
   {
     icon: Users2,
@@ -72,16 +72,13 @@ export default function OverOnsPage() {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
             <TagBadge className="mb-6">Over ons</TagBadge>
-            <h1 className="mb-5 font-heading text-4xl font-extrabold leading-[1.1] tracking-[-0.03em] text-text sm:text-5xl">
-              Twee ondernemers,{" "}
-              <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-                één missie
-              </span>
+            <h1 className="mb-5 text-4xl font-extrabold leading-[1.1] tracking-[-0.03em] text-text sm:text-5xl">
+              <span className="font-heading">Twee ondernemers, </span>
+              <span className="font-display italic text-primary">één missie</span>
             </h1>
             <p className="mx-auto max-w-xl text-lg leading-[1.7] text-text-muted">
-              We bouwen de tool die architectenbureaus verdienen — zodat ze
-              minder tijd kwijt zijn aan zoeken en meer tijd hebben om te
-              ontwerpen.
+              We snappen hoe frustrerend het is om die ene foto niet te vinden.
+              Daarom bouwen we de tool die architectenbureaus verdienen.
             </p>
           </motion.div>
         </div>
@@ -92,8 +89,9 @@ export default function OverOnsPage() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <TagBadge className="mb-4">Ons verhaal</TagBadge>
-            <h2 className="mb-5 font-heading text-2xl font-bold tracking-[-0.03em] text-text sm:text-3xl">
-              Vanuit frustratie naar oplossing
+            <h2 className="mb-5 text-2xl font-bold tracking-[-0.03em] text-text sm:text-3xl">
+              <span className="font-heading">Vanuit frustratie naar </span>
+              <span className="font-display italic">oplossing</span>
             </h2>
             <div className="space-y-4 text-base leading-[1.7] text-text-muted">
               <p>
@@ -103,15 +101,15 @@ export default function OverOnsPage() {
                 mappen, drives, USB-sticks en e-mails.
               </p>
               <p>
-                Als twee jonge ondernemers met een achtergrond in AI en software
-                engineering zagen we een kans om dit probleem fundamenteel op te
-                lossen. Niet met nog een cloud-opslagdienst, maar met een
-                intelligent systeem dat architectuurtaal begrijpt.
+                We zijn geen groot techbedrijf — we zijn twee ondernemers die
+                dit probleem willen oplossen. Door continu met bureaus te praten,
+                te testen en te verbeteren, bouwen we een product dat echt
+                aansluit bij jullie werkwijze.
               </p>
               <p>
-                Na maanden van gesprekken met architectenbureaus, testen en
-                itereren, is Beeldenbank ontstaan — een AI-beeldenbank die
-                specifiek is gebouwd voor de architectuursector.
+                Na maanden van gesprekken met architectenbureaus is Beeldenbank
+                ontstaan — een beeldenbank die je vaktaal begrijpt en die je
+                team dagelijks kan gebruiken zonder handleiding.
               </p>
             </div>
           </div>
@@ -151,8 +149,8 @@ export default function OverOnsPage() {
                 </div>
               </div>
               <div className="mt-6 rounded-xl bg-tag-bg p-4 text-center">
-                <p className="text-sm font-medium text-primary">
-                  &quot;We bouwen de tool die we zelf graag hadden gehad.&quot;
+                <p className="font-annotation text-base text-primary">
+                  &quot;We bouwen de tool die architectenbureaus verdienen — praktisch, snel, en zonder gedoe.&quot;
                 </p>
               </div>
             </div>
@@ -164,13 +162,14 @@ export default function OverOnsPage() {
       <SectionWrapper bgColor="bg-surface">
         <div className="mx-auto max-w-3xl text-center">
           <TagBadge className="mb-4">Onze missie</TagBadge>
-          <h2 className="mb-5 font-heading text-2xl font-bold tracking-[-0.03em] text-text sm:text-3xl">
-            AI inzetten waar het echt impact heeft
+          <h2 className="mb-5 text-2xl font-bold tracking-[-0.03em] text-text sm:text-3xl">
+            <span className="font-heading">Minder zoeken, meer </span>
+            <span className="font-display italic">ontwerpen</span>
           </h2>
           <p className="mx-auto mb-14 max-w-2xl text-base leading-[1.7] text-text-muted">
-            Onze missie is om architectenbureaus te bevrijden van repetitief
-            werk. Door AI slim in te zetten voor beeldbeheer, creëren we ruimte
-            voor wat echt telt: ontwerpen.
+            Onze missie is simpel: architectenbureaus bevrijden van repetitief
+            werk. Slim beeldbeheer geeft jullie de ruimte voor wat echt telt —
+            ontwerpen.
           </p>
         </div>
 
@@ -211,7 +210,7 @@ export default function OverOnsPage() {
             </h2>
             <p className="mb-8 text-base leading-[1.7] text-text-muted">
               Heb je vragen over Beeldenbank? Wil je een demo? Of gewoon even
-              sparren over hoe AI jouw bureau kan helpen? We horen graag van je.
+              sparren over hoe wij jullie bureau kunnen helpen? We horen graag van je.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-sm text-text-muted">
@@ -248,7 +247,7 @@ export default function OverOnsPage() {
       </SectionWrapper>
 
       {/* ═══ CTA ═══ */}
-      <section className="relative overflow-hidden bg-primary py-20 md:py-28">
+      <section className="grain-texture relative overflow-hidden bg-primary-dark py-20 md:py-28">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
           <div className="absolute -right-20 -bottom-20 h-72 w-72 rounded-full bg-primary-light/30 blur-3xl" />
@@ -260,12 +259,14 @@ export default function OverOnsPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h2 className="mb-5 font-heading text-3xl font-bold tracking-[-0.03em] text-white sm:text-4xl">
-            Klaar om samen te werken?
+          <h2 className="mb-5 text-3xl font-bold tracking-[-0.03em] text-white sm:text-4xl">
+            <span className="font-heading">Klaar om </span>
+            <span className="font-display italic">samen te werken</span>
+            <span className="font-heading">?</span>
           </h2>
           <p className="mx-auto mb-8 max-w-xl text-base leading-[1.7] text-white/70">
-            Start vandaag nog met Beeldenbank en ontdek hoe AI jouw
-            beeldarchief kan transformeren.
+            Benieuwd wat Beeldenbank voor jullie bureau kan betekenen? We laten
+            het je graag zien.
           </p>
           <Button variant="primary" size="lg" href="#">
             Vraag een demo aan
